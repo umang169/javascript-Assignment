@@ -1,0 +1,13 @@
+// Q1 . 1. Reverse String.
+// The problem is to create a program that uses the setTimeout() function to reverse a given string after a delay
+// of 2 seconds. The program should use a variable “input” storing a string as input and then implement a delay of
+// 2 seconds before reversing the string. The reversed string should then be printed as output.
+
+const str =  prompt("enter a string")
+console.log(str)
+console.log("wait for 2 second , I will Reverse it")
+const arr = str.split("")
+const arr_reverse = arr.reverse()
+arr_reverse.join(" ")
+setTimeout(() => console.log(arr_reverse.join("")),2000)
+
